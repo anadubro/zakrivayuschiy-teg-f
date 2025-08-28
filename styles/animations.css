@@ -9,3 +9,100 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+.main-body {
+  transition: fill 0.3s linear;
+}
+
+/* HOVER */
+.like-icon:hover .core {
+  fill: var(--fill-core-color);
+  transition-delay: 0s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--fill-main-body-color);
+  transition-delay: 0.05s;
+}
+
+/* ACTIVE */
+.like-icon:active .core {
+  --fill-core-color: red;
+  fill: var(--fill-core-color);
+  transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+  --fill-main-body-color: red;
+  fill: var(--fill-main-body-color);
+  transition-delay: 0.05s;
+}
+
+/* CLICK */
+.like-icon.is-liked .contour {
+  --fill-contour-color: red;
+  fill: var(--fill-contour-color);
+  transition-duration: 0.3s;
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .core {
+  --fill-main-body-color: red;
+  fill: var(--fill-main-body-color);
+  transition-delay: 0s;
+}
+
+.like-icon.is-liked .main-body {
+  --fill-main-body-color: red;
+  fill: var(--fill-main-body-color);
+  transition-delay: 0.05s;
+}
+
+/* ANIMATION */
+.like-icon .heart {
+  transform-box: fill-box;
+  transform-origin: center;
+  -webkit-transform-box: fill-box;
+  -webkit-transform-origin: center;
+}
+
+
+.like-icon.is-liked .heart {
+  animation: scale 0.3s ease-in 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s ease-in 0.3s;
+}

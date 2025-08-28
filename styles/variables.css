@@ -1,1 +1,25 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --base-font-family: 'Inter-Variable', sans-serif;  
+  --font-family-decor: 'PressStart2P', system-ui;
+
+  --font-weight-text: 410;
+  --font-weight-title: 715;
+
+  --cover-gradient-inline-line: repeating-linear-gradient(180deg, #D3D3D1, transparent 2px);
+  --cover-gradient-block-line: repeating-linear-gradient(90deg, #D3D3D1, transparent 2px);
+  --cover-gradient-block-bg: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --base-width: clamp(375px, 100%, 700px);
+
+  --color-stroke: #fff;
+  --border-button: 2px solid #000;
+  --color-button-text: #fff;
+  --bg-color: #fff;
+
+  --fill-contour-color: #000;
+  --fill-sparks-color: red;
+  --fill-core-color: #000;
+  --fill-main-body-color: #000;
+  --animation-fill-color: red;
+}

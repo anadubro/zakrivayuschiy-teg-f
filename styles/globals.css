@@ -37,9 +37,20 @@ input {
   font-size: inherit;
 }
 
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 ul,
 ol {
   list-style: none;
+}
+
+dialog {
+  padding: 0;
 }
 
 .visually-hidden {
