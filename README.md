@@ -1,1 +1,1 @@
-https://anadubro.github.io/zakrivayuschiy-teg-f/
+https://github.com/anadubro/zakrivayuschiy-teg-f
