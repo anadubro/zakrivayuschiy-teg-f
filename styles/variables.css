@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --base-font-family: 'Inter-Variable', sans-serif;  
+  --base-font-family: 'Inter-Variable', sans-serif;
   --font-family-decor: 'PressStart2P', system-ui;
 
   --font-weight-text: 410;
