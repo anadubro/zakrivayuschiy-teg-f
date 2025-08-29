@@ -35,59 +35,60 @@
 }
 
 .contour {
-  transition: fill 0.1s linear;
+  transition: fill 0.1s linear 0s;
 }
 
 .core {
+  fill: transparent;
   transition: fill 0.3s linear 0.03s;
 }
 
 .main-body {
-  transition: fill 0.3s linear;
+  fill: transparent;
+  transition: fill 0.3s linear 0s;
 }
 
 /* HOVER */
 .like-icon:hover .core {
   fill: var(--fill-core-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon:hover .main-body {
   fill: var(--fill-main-body-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 /* ACTIVE */
 .like-icon:active .core {
   --fill-core-color: red;
   fill: var(--fill-core-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon:active .main-body {
   --fill-main-body-color: red;
   fill: var(--fill-main-body-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 /* CLICK */
 .like-icon.is-liked .contour {
   --fill-contour-color: red;
   fill: var(--fill-contour-color);
-  transition-duration: 0.3s;
-  transition-delay: 0.06s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .core {
   --fill-main-body-color: red;
   fill: var(--fill-main-body-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .main-body {
   --fill-main-body-color: red;
   fill: var(--fill-main-body-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 /* ANIMATION */

@@ -6,8 +6,8 @@
   --font-weight-text: 410;
   --font-weight-title: 715;
 
-  --cover-gradient-inline-line: repeating-linear-gradient(180deg, #D3D3D1, transparent 2px);
-  --cover-gradient-block-line: repeating-linear-gradient(90deg, #D3D3D1, transparent 2px);
+  --cover-gradient-inline-line: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px);
+  --cover-gradient-block-line: repeating-linear-gradient(to bottom,#d3d3d3 0 2px, transparent 2px 4px);
   --cover-gradient-block-bg: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 
   --base-width: clamp(375px, 100%, 700px);
